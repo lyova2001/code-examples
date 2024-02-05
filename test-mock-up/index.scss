@@ -1,0 +1,53 @@
+* {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+
+    @media (max-width: 1024px) {
+        max-width: 980px;
+    }
+
+    @media (max-width: 768) {
+        max-width: 100%;
+    }
+}
+
+.rations {
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &_item {
+        min-height: 200px;
+    }
+    &_title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    &_description {
+        margin-bottom: 20x;
+    }
+    &_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_btn {
+        // all buttons styles
+    }
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
